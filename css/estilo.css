@@ -2,14 +2,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /*common*/
 .menuInicial {
   max-height: 61px;
   border-bottom: 3px solid blue;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   z-index: 15;
 }
@@ -92,6 +94,7 @@ div.GP1 {
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 65px;
 }
 
 .img1 img {
@@ -99,7 +102,8 @@ div.GP1 {
 }
 
 div.img1 img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 div.ufp {
@@ -113,7 +117,8 @@ div.ufp {
   text-align: center;
   font-weight: bold;
   color: white;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .ufp p.moto3 {
@@ -135,7 +140,8 @@ div.ufp {
 }
 
 div.img2 img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .mb-modI {
@@ -192,18 +198,23 @@ div.clean {
 }
 
 .input-group-text {
-  box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
 }
 
 .form-control {
-  box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
 }
+
 .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.5) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.5) !important;
 }
 
 .form-select {
-  box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(27, 38, 49, 0.5) !important;
 }
 
 .custom-btn {
@@ -215,10 +226,12 @@ div.clean {
   font-weight: 500;
   background: transparent;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -227,47 +240,62 @@ div.clean {
   right: 20px;
   bottom: 20px;
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   width: 130px;
   height: 40px;
   line-height: 42px;
+  -webkit-perspective: 230px;
   perspective: 230px;
 }
 
 .btn-12 span {
   background: #00acee;
+  background: -webkit-gradient(linear, left bottom, left top, from(#00acee), to(#027efb));
   background: linear-gradient(0deg, #00acee 0%, #027efb 100%);
   display: block;
   position: absolute;
   width: 130px;
   height: 40px;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin: 0;
   text-align: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  transition: all 0.3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .btn-12 span:nth-child(1) {
-  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
 }
 
 .btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
 }
 
 .btn-12:hover span:nth-child(1) {
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
 
 .btn-12:hover span:nth-child(2) {
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   color: transparent;
+  -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
 
@@ -280,7 +308,7 @@ div.lore {
   color: white;
   text-align: center;
   font-style: italic;
-  margin-top: 15px;
+  margin-top: 65px;
   padding-top: 10px;
   padding-bottom: 15px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -296,25 +324,33 @@ div img {
 }
 
 /*sagas*/
+.sagas {
+  margin-top: 65px;
+}
+
 .crd {
   margin: auto;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 20px;
 }
+
 .crd .card {
   background-color: rgba(0, 0, 0, 0.4);
   height: cover;
   width: 25 rem;
   padding: 30px;
   overflow: visible;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .crd .card img.card-img-top {
   margin: auto;
   border-radius: 10px;
   width: cover;
 }
+
 .crd .card .card-text {
   padding-top: 10px;
   color: white;
@@ -336,26 +372,38 @@ div.snw {
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
-  margin-top: 20px;
+  margin-top: 65px;
 }
 
 div.flexbox {
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 div.flexbox .flexbox1 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 20px;
 }
+
 div.flexbox .flexbox1 img {
   width: 100%;
-  align-content: center;
-  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 15%;
 }
+
 div.flexbox .flexbox2 p {
   overflow: visible;
   margin: auto;
@@ -372,7 +420,7 @@ div.flexbox .flexbox2 p {
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
-  margin-top: 20px;
+  margin-top: 65px;
 }
 
 /*data.html*/
@@ -382,6 +430,7 @@ div.soong {
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   margin: auto;
+  margin-top: 65px;
 }
 
 div.data {
@@ -408,4 +457,5 @@ div.geneData {
   margin-right: auto;
   padding-bottom: 20px;
   margin-bottom: 17.6vh;
-}/*# sourceMappingURL=estilo.css.map */
+}
+/*# sourceMappingURL=estilo.css.map */
