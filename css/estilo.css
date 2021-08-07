@@ -82,6 +82,10 @@ body {
   height: 100%;
 }
 
+.warp {
+  height: 100%;
+}
+
 /*index.html*/
 div.GP1 {
   background-color: rgba(0, 0, 0, 0.6);
@@ -132,6 +136,10 @@ div.ufp {
 
 div.img2 img:hover {
   transform: scale(1.1);
+}
+
+.mb-modI {
+  margin-bottom: 37vh;
 }
 
 div#contacto {
@@ -353,8 +361,8 @@ div.flexbox .flexbox2 p {
   margin: auto;
 }
 
-.mb-mod {
-  margin-bottom: 150px;
+.mb-modSNW {
+  margin-bottom: 18.5rem;
 }
 
 /* Prodigy*/
@@ -398,6 +406,6 @@ div.geneData {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
   padding-bottom: 20px;
+  margin-bottom: 17.6vh;
 }/*# sourceMappingURL=estilo.css.map */
