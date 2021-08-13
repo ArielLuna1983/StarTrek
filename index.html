@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fanpage Star trek - Protocolo Omega">
+    <meta name="keywords" content="Star trek, contacto, inicio">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="media/trekIcon.png" />
+    <title>Star Trek Memory Omega</title>
+</head>
+
+<body>
+
+    <div class="menuInicial bg-dark">
+        <nav class="container navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo.png" width="30 " height="30 " alt="logo">
+                <span>Memory Omega</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse init" id="navbarNav">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html ">Memory Omega<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lore.html">Lore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sagas.html">Sagas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="snworlds.html">Strange New Worlds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prodigy.html">Prodigy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container row mx-auto GP1">
+        <div class="col-lg-3 col-md-12 d-block mx-auto align-middle img1"><img src="media/llap1.jpg" alt="llap1"></div>
+        <div class="col-lg-6 col-md-12 d-block mx-auto text-center my-auto ufp">
+            <p class="moto1">Ad Astra Audacter Eamus In Alis Fidelium</p>
+            <p class="moto2">To Blodly Go To The Stars On The Wings Of The faithful</p>
+            <p class="moto3">To Boldly Go Where No One Has Gone Before</p>
+        </div>
+        <div class="col-lg-3 col-md-12 d-block mx-auto align-content-center justify-content-center img2 "><img src="media/llap2.jpg " alt="llap2 "></div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <div class="row container mx-auto mt-5 mb-modI">
+        <button id="contacto " type="button" class="mx-auto btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModal">CONTACTO</button>
+    </div>
+
+    <footer>
+        <p class="quote">Quería imaginar un universo libre de pobreza, una civilización que olvidase el odio y explore junta el espacio. -Gene Roddenberry.</p>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1 " aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title cont" id="exampleModalLabel">CONTACTO</h5>
+                    <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Adios">
+          <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body GP2 bg-dark">
+                    <form action="data.html" href="data.html" method="POST" enctype="multipar/form-data">
+                        <label for="basic-url" class="contacto form-label">Contacto</label>
+                        <div id="row">
+                            <div class="contacto input-group">
+                                <span class="input-group-text">Nombre e Email</span>
+                                <input type="text" aria-label="First name" class="form-control" name="nombre" placeholder="Nombre ">
+                                <input type="text" aria-label="Last name" class="form-control" name="Email" placeholder="Email">
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="exampleFormControlTextarea1" class="contacto form-label"></label>
+                                <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos Tú Mensaje"></textarea>
+                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Tipo de Contacto</option>
+                                <option value="1">Correcciones</option>
+                                <option value="2">Peticiones</option>
+                                <option value="3">Trabajar con nosotros</option>
+                                <option value="x">Decirnos cuanto "nos queres "</option>
+                            </select>
+                            <div class="ask">
+                                <legend>Capitán Favorito</legend>
+                                <ul>
+                                    <li><input type="checkbox" name="Capitanes" value="Archer" id="op01">
+                                        <label for="op01">Johnathan Archer</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Emperadora" id="op02">
+                                        <label for="op02">Phillipa/Emperadora Giorgiou</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="mirror" id="op03">
+                                        <label for="op03">Gabriel Lorca</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Pike" id="op04">
+                                        <label for="op04">Christopher Pike</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Original" id="op05">
+                                        <label for="op05">James T. Kirk</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Spock" id="op06">
+                                        <label for="op06 ">Spock</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Sulu" id="op07">
+                                        <label for="op07">Hikaru Sulu</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Locutus" id="op08">
+                                        <label for="op08">Jean-Luc Picard</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Pimp" id="op09 ">
+                                        <label for="op09">William Riker</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="notLore" id="op10">
+                                        <label for="op10">Data</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Sisko" id="op11">
+                                        <label for="op11">Benjamin Sisko</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Worf" id="op12">
+                                        <label for="op12">Worf</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="coffeeJunkie" id="op13">
+                                        <label for="op13">Katherine Janeway</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="Chicken" id="op14">
+                                        <label for="op14">Saru</label></li>
+                                    <li><input type="checkbox" name="Capitanes" value="preWarp" id="op15">
+                                        <label for="op15">Ninguno</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer bg-dark">
+                            <div class="row">
+                                <div class="engage">
+                                    <button class="engage custom-btn btn-12 col-lg-3 col-md-12" type="submit" value="enviar"><span>Enviar</span><span>ENGAGE!</span></button>
+                                </div>
+                                <div class="clean">
+                                    <button class="clean custom-btn btn-12 col-lg-3 col-md-12" type="reset " value="reset"><span>Reset</span><span>Limpiar</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+</body>
+
+</html>
